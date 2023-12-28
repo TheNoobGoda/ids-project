@@ -1,0 +1,264 @@
+RESULTS - CLEAN DATA, NOT BALANCED
+
+Random Forest with Imputer - Accuracy: 0.872791519434629
+
+Random Forest with Imputer - Confusion Matrix:
+ [[126  14]
+ [ 22 121]]
+
+Random Forest with Imputer - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.85      0.90      0.88       140
+           1       0.90      0.85      0.87       143
+
+    accuracy                           0.87       283
+   macro avg       0.87      0.87      0.87       283
+weighted avg       0.87      0.87      0.87       283
+
+
+GradientBoostingClassifier with Imputer - Accuracy: 0.8798586572438163
+
+GradientBoostingClassifier with Imputer - Confusion Matrix:
+ [[128  12]
+ [ 22 121]]
+
+GradientBoostingClassifier with Imputer - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.85      0.91      0.88       140
+           1       0.91      0.85      0.88       143
+
+    accuracy                           0.88       283
+   macro avg       0.88      0.88      0.88       283
+weighted avg       0.88      0.88      0.88       283
+
+HistGradientBoostingClassifier - Accuracy: 0.8621908127208481
+
+HistGradientBoostingClassifier - Confusion Matrix:
+ [[125  15]
+ [ 24 119]]
+
+HistGradientBoostingClassifier - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.84      0.89      0.87       140
+           1       0.89      0.83      0.86       143
+
+    accuracy                           0.86       283
+   macro avg       0.86      0.86      0.86       283
+weighted avg       0.86      0.86      0.86       283
+
+Cross-Validation Scores - Random Forest: [0.83819629 0.8806366  0.90185676]
+Random Forest Mean Accuracy: 0.8735632183908045
+Cross-Validation Scores - Gradient Boosting: [0.86472149 0.87533156 0.88859416]
+Gradient Boosting Mean Accuracy: 0.8762157382847038
+
+Best Hyperparameters for Bagging: {'baggingclassifier__n_estimators': 200}
+Best Bagging Accuracy: 0.8515901060070671
+Best Hyperparameters for RandomForest: {'randomforestclassifier__max_depth': None, 'randomforestclassifier__max_features': None, 'randomforestclassifier__n_estimators': 100}
+Best RandomForest Accuracy: 0.8621908127208481
+Best Hyperparameters for AdaBoost: {'adaboostclassifier__n_estimators': 50}
+Best AdaBoost Accuracy: 0.7950530035335689
+Best Hyperparameters for GradientBoosting: {'gradientboostingclassifier__learning_rate': 0.1, 'gradientboostingclassifier__n_estimators': 100}
+Best GradientBoosting Accuracy: 0.8798586572438163
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+RESULTS - CLEAN DATA, BALANCED
+
+Random Forest with Imputer - Accuracy: 0.872791519434629
+
+Random Forest with Imputer - Confusion Matrix:
+ [[126  14]
+ [ 22 121]]
+
+Random Forest with Imputer - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.85      0.90      0.88       140
+           1       0.90      0.85      0.87       143
+
+    accuracy                           0.87       283
+   macro avg       0.87      0.87      0.87       283
+weighted avg       0.87      0.87      0.87       283
+
+GradientBoostingClassifier with Imputer - Accuracy: 0.8798586572438163
+
+GradientBoostingClassifier with Imputer - Confusion Matrix:
+ [[128  12]
+ [ 22 121]]
+
+GradientBoostingClassifier with Imputer - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.85      0.91      0.88       140
+           1       0.91      0.85      0.88       143
+
+    accuracy                           0.88       283
+   macro avg       0.88      0.88      0.88       283
+weighted avg       0.88      0.88      0.88       283
+
+
+HistGradientBoostingClassifier - Accuracy: 0.8621908127208481
+
+HistGradientBoostingClassifier - Confusion Matrix:
+ [[125  15]
+ [ 24 119]]
+
+HistGradientBoostingClassifier - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.84      0.89      0.87       140
+           1       0.89      0.83      0.86       143
+
+    accuracy                           0.86       283
+   macro avg       0.86      0.86      0.86       283
+weighted avg       0.86      0.86      0.86       283
+
+
+Cross-Validation Scores - Random Forest: [0.83819629 0.8806366  0.90185676]
+Random Forest Mean Accuracy: 0.8735632183908045
+Cross-Validation Scores - Gradient Boosting: [0.86472149 0.87533156 0.88859416]
+Gradient Boosting Mean Accuracy: 0.8762157382847038
+
+Best Hyperparameters for Bagging: {'baggingclassifier__n_estimators': 200}
+Best Bagging Accuracy: 0.8551236749116607
+Best Hyperparameters for RandomForest: {'randomforestclassifier__max_depth': 10, 'randomforestclassifier__max_features': None, 'randomforestclassifier__n_estimators': 100}
+Best RandomForest Accuracy: 0.8515901060070671
+Best Hyperparameters for AdaBoost: {'adaboostclassifier__n_estimators': 50}
+Best AdaBoost Accuracy: 0.7950530035335689
+Best Hyperparameters for GradientBoosting: {'gradientboostingclassifier__learning_rate': 0.1, 'gradientboostingclassifier__n_estimators': 100}
+Best GradientBoosting Accuracy: 0.8833922261484098
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+RESULTS - RAW DATA, NOT BALANCED
+
+Random Forest with Imputer - Accuracy: 0.959
+
+Random Forest with Imputer - Confusion Matrix:
+ [[851  10]
+ [ 31 108]]
+
+Random Forest with Imputer - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.96      0.99      0.98       861
+           1       0.92      0.78      0.84       139
+
+    accuracy                           0.96      1000
+   macro avg       0.94      0.88      0.91      1000
+weighted avg       0.96      0.96      0.96      1000
+
+GradientBoostingClassifier with Imputer - Accuracy: 0.955
+
+GradientBoostingClassifier with Imputer - Confusion Matrix:
+ [[850  11]
+ [ 34 105]]
+
+GradientBoostingClassifier with Imputer - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.96      0.99      0.97       861
+           1       0.91      0.76      0.82       139
+
+    accuracy                           0.95      1000
+   macro avg       0.93      0.87      0.90      1000
+weighted avg       0.95      0.95      0.95      1000
+
+HistGradientBoostingClassifier - Accuracy: 0.961
+
+HistGradientBoostingClassifier - Confusion Matrix:
+ [[853   8]
+ [ 31 108]]
+
+HistGradientBoostingClassifier - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.96      0.99      0.98       861
+           1       0.93      0.78      0.85       139
+
+    accuracy                           0.96      1000
+   macro avg       0.95      0.88      0.91      1000
+weighted avg       0.96      0.96      0.96      1000
+
+Cross-Validation Scores - Random Forest: [0.94902549 0.95723931 0.951988  ]
+Random Forest Mean Accuracy: 0.9527509313610262
+Cross-Validation Scores - Gradient Boosting: [0.94527736 0.95423856 0.951988  ]
+Gradient Boosting Mean Accuracy: 0.9505013059861667
+
+Best Hyperparameters for Bagging: {'baggingclassifier__n_estimators': 50}
+Best Bagging Accuracy: 0.954
+Best Hyperparameters for RandomForest: {'randomforestclassifier__max_depth': 20, 'randomforestclassifier__max_features': 'sqrt', 'randomforestclassifier__n_estimators': 200}
+Best RandomForest Accuracy: 0.963
+Best Hyperparameters for AdaBoost: {'adaboostclassifier__n_estimators': 50}
+Best AdaBoost Accuracy: 0.883
+Best Hyperparameters for GradientBoosting: {'gradientboostingclassifier__learning_rate': 0.1, 'gradientboostingclassifier__n_estimators': 200}
+Best GradientBoosting Accuracy: 0.953
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+RESULTS - RAW DATA, BALANCED
+
+Random Forest with Imputer - Accuracy: 0.9918509895227008
+
+Random Forest with Imputer - Confusion Matrix:
+ [[831  13]
+ [  1 873]]
+
+Random Forest with Imputer - Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99       844
+           1       0.99      1.00      0.99       874
+
+    accuracy                           0.99      1718
+   macro avg       0.99      0.99      0.99      1718
+weighted avg       0.99      0.99      0.99      1718
+
+GradientBoostingClassifier with Imputer - Accuracy: 0.9010477299185099
+
+GradientBoostingClassifier with Imputer - Confusion Matrix:
+ [[796  48]
+ [122 752]]
+
+GradientBoostingClassifier with Imputer - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.87      0.94      0.90       844
+           1       0.94      0.86      0.90       874
+
+    accuracy                           0.90      1718
+   macro avg       0.90      0.90      0.90      1718
+weighted avg       0.90      0.90      0.90      1718
+
+HistGradientBoostingClassifier - Accuracy: 0.9848661233993015
+
+HistGradientBoostingClassifier - Confusion Matrix:
+ [[822  22]
+ [  4 870]]
+
+HistGradientBoostingClassifier - Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.97      0.98       844
+           1       0.98      1.00      0.99       874
+
+    accuracy                           0.98      1718
+   macro avg       0.99      0.98      0.98      1718
+weighted avg       0.99      0.98      0.98      1718
+
+Cross-Validation Scores - Random Forest: [0.98995633 0.98383574 0.98296199]
+Random Forest Mean Accuracy: 0.9855846867144491
+Cross-Validation Scores - Gradient Boosting: [0.90742358 0.90782001 0.90345129]
+Gradient Boosting Mean Accuracy: 0.9062316260986186
+
+Best Hyperparameters for Bagging: {'baggingclassifier__n_estimators': 200}
+Best Bagging Accuracy: 0.989522700814901
+Best Hyperparameters for RandomForest: {'randomforestclassifier__max_depth': None, 'randomforestclassifier__max_features': 1, 'randomforestclassifier__n_estimators': 100}
+Best RandomForest Accuracy: 0.9976717112922002
+Best Hyperparameters for AdaBoost: {'adaboostclassifier__n_estimators': 200}
+Best AdaBoost Accuracy: 0.8573923166472642
+Best Hyperparameters for GradientBoosting: {'gradientboostingclassifier__learning_rate': 0.2, 'gradientboostingclassifier__n_estimators': 200}
+Best GradientBoosting Accuracy: 0.9575087310826542
